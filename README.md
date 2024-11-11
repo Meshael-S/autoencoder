@@ -14,9 +14,7 @@ This code utilizes the pyEDA toolkit to extract features from EDA data using bot
 
 ## How to Run the Code
 
-Prepare your EDA data:
-
-Ensure your EDA data is in a suitable format (e.g., CSV, NumPy array).
+Prepare your EDA data: Ensure your EDA data is in a suitable format (e.g., CSV, NumPy array).
 The code assumes the data is stored in a dictionary called data_All under the key 'data' and subkey 'EDA'.
 
 The code will first perform statistical feature extraction using the process_statistical function.
@@ -24,12 +22,9 @@ Then, it will train an autoencoder and extract features using the prepare_automa
 
 Statistical Feature Extraction
 
-The process_statistical function extracts features such as:
-  Number of peaks
-  Mean GSR
-  Maximum peak amplitude
-  Phasic and tonic components
-  Automatic Feature Extraction
+The process_statistical function extracts features such as: Number of peaks, Mean GSR, Maximum peak amplitude, Phasic and tonic components
+
+Automatic Feature Extraction
   The prepare_automatic function preprocesses the EDA data and trains an autoencoder.
   The process_automatic function uses the trained autoencoder to extract latent features.
 
