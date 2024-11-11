@@ -21,16 +21,18 @@ The code assumes the data is stored in a dictionary called data_All under the ke
 
 The code will first perform statistical feature extraction using the process_statistical function.
 Then, it will train an autoencoder and extract features using the prepare_automatic and process_automatic functions.
-Code Overview
+
 Statistical Feature Extraction
+
 The process_statistical function extracts features such as:
-Number of peaks
-Mean GSR
-Maximum peak amplitude
-Phasic and tonic components
-Automatic Feature Extraction
-The prepare_automatic function preprocesses the EDA data and trains an autoencoder.
-The process_automatic function uses the trained autoencoder to extract latent features.
+  Number of peaks
+  Mean GSR
+  Maximum peak amplitude
+  Phasic and tonic components
+  Automatic Feature Extraction
+  The prepare_automatic function preprocesses the EDA data and trains an autoencoder.
+  The process_automatic function uses the trained autoencoder to extract latent features.
+
 Notes
 The code includes an example of reshaping and segmenting EDA data.
 The autoencoder architecture consists of 14 layers (7 encoder layers and 7 decoder layers).
